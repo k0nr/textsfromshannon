@@ -1,0 +1,637 @@
+<!DOCTYPE=HTML>
+<html>
+<head>
+<style>
+body {
+	background-color: orange;
+}
+
+h1 {
+	font-family: courier;
+	text-align: center;
+}
+
+h2 {
+	font-family: courier;
+	text-align: center;
+}
+
+@keyframes oneen {
+	0% {background-color: magenta; color: cyan;}
+	50% {background-color: green; color: white;}
+	100% {background-color: magenta; color: cyan;}
+	
+}
+
+@keyframes oneen2 {
+	0% {background-color: black; color: cyan;}
+	10% {background-color: green; color: orange;}
+	50% {background-color: #16350D; color: #F492E8;}
+	80% {background-color: #9CE7E6; color: #586104;}
+	88% {background-color: #7C2424; color: #168605;}
+	100% {background-color: magenta; color: cyan;}
+}
+
+@keyframes oneen3 {
+
+0% {background-color: #C65A5A50; color: #2E2793;}
+10% {background-color: #A6A3CC50; color: #76E223;}
+11% {background-color: #71331450; color: #FC14F5;}
+25% {background-color: #5BF3AE50; color: #FCFF00;}
+60% {background-color: #50664950; color: #CE1D13;}
+80% {background-color: #EEE76050; color: #366D96;}
+83% {background-color: #E292E850; color: #320C35;}
+88% {background-color: #00F52150; color: #00ECF5;}
+90% {background-color: #F3367250; color: #F39836;}
+100% {background-color: #0C804450; color: #587579;}
+}
+
+@keyframes oneen4 {
+	0% {color: #5F6125;}
+	20% {color: #799979;}
+	35% {color: #626206;}
+	58% {color: #8BA1F0;}
+	61% {color: #E5FF00;}
+	90% {color: #401786;}
+	99% {color: #17AF8C;}
+}
+
+@keyframes bounce {
+	0% {top: 20%;}
+	50% {top: 80%;}
+	100% {top: 20%;}
+}	
+
+@keyframes flying {
+	0% {left: 0px;}
+	50% {left: 700px;}
+	100% {left: 0px;}
+}
+
+@keyframes diagonal {
+	0% {left: 0%; top: 0%;}
+	100% {left: 100%; top: 100%;}
+}
+
+@keyframes scroll-left {
+	0% { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+@keyframes blink1 {
+	from {opacity: 0.0;}
+	to {opacity: 1.0;}
+}
+
+@keyframes scroll-right {
+	0% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 		
+	}
+ 100% { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 
+	}
+}
+
+@keyframes scroll-up {
+	0% { 
+ -moz-transform: translateY(100%); /* Browser bug fix */
+ -webkit-transform: translateY(100%); /* Browser bug fix */
+ transform: translateY(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateY(-100%); /* Browser bug fix */
+ -webkit-transform: translateY(-100%); /* Browser bug fix */
+ transform: translateY(-100%); 
+ }
+ }
+ 
+@keyframes scroll-down {
+	0% { 
+ -moz-transform: translateY(-100%); /* Browser bug fix */
+ -webkit-transform: translateY(-100%); /* Browser bug fix */
+ transform: translateY(-100%); 		
+ }
+ 100% { 
+ -moz-transform: translateY(100%); /* Browser bug fix */
+ -webkit-transform: translateY(100%); /* Browser bug fix */
+ transform: translateY(100%); 
+	}
+	}
+	
+@keyframes fadeswap {
+0% {opacity: 0;}
+25% {opacity: 0;}
+50% {opacity: 0;}
+75% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+@keyframes fadeswap2 {
+0% {opacity: 0;}
+25% {opacity: 0;}
+50% {opacity: 0;}
+75% {opacity: 1;}
+100% {opacity: 1;}
+}
+
+@keyframes rotate {
+ 0% {transform: rotate(0deg);}
+ 100% {transform: rotate(360deg);}
+
+}
+
+@keyframes italic {
+0%  {font-style: normal;}
+50% {font-style: italic;} 
+100% {font-style: normal;}
+}
+
+@keyframes spinround {
+0% {transform: rotate(0deg);}
+50% {transform: rotateY(180deg);}
+100% {transform: rotate(0deg);}
+}
+
+@keyframes flipover {
+0% {transform: rotateX(0deg);}
+25% {transform: rotatex(30deg);}
+75% {transform: rotatex(330deg);}
+100% {transform:rotateX(360deg);}
+}
+
+@keyframes clinton {
+0% { 
+ -moz-transform: translateY(100%); /* Browser bug fix */
+ -webkit-transform: translateY(100%); /* Browser bug fix */
+ transform: translateY(100%); 		
+ transform: rotate(0deg);}
+ 
+25% {
+transform: rotate(90deg;)
+}
+
+100% { 
+ -moz-transform: translateY(-100%); /* Browser bug fix */
+ -webkit-transform: translateY(-100%); /* Browser bug fix */
+ transform: translateY(-100%); 
+ transform: rotate(90deg;)
+ }
+}
+
+#div01 {
+	position: absolute;
+	width: 40%;
+	left: 30%;
+	background-color: magenta;
+	text-align: center;
+	color: cyan;
+	font-family: Comic Sans MS;
+	font-size: 25px;
+	animation-name: oneen;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	z-index: -2;
+	
+}
+
+#div02 {
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	background-color: cyan;
+	text-align:right;
+	font-family: Comic Sans MS;
+	width: 300px;
+	height: 40px;
+	animation-name: bounce;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+}
+
+#div03 {
+	position: absolute;
+	top: 45%;
+	left: 30%;
+	background-color: black;
+	font-family: Comic Sans MS;
+	color: pink;
+	font-size: 40px;
+	width: 740px;
+	height: 90px;
+	animation-name: flying;
+	animation-duration: 6s;
+	animation-iteration-count:infinite;
+}
+
+#marq01 {
+	position: absolute;
+	bottom: 3%;
+	background-color: transparent;
+	overflow: hidden;
+    white-space: nowrap;
+	font-family: Comic Sans MS;
+	color: white;
+	font-size: 90px;
+	animation: scroll-right 17s linear infinite;
+}
+	
+#blink {
+	position: absolute; 
+	bottom: 5%;
+	background-color: transparent;
+	font-family: Comic Sans MS;
+	color: black;
+	font-size: 90px;
+	animation: blink1 3s infinite;
+}
+
+#story {
+	position: absolute;
+	overflow: hidden;
+    white-space: nowrap;
+	top: 58%;
+	animation: scroll-left 25s linear infinite;
+	font-family: Comic Sans MS;
+	color: green;
+	font-size: 80px;
+	z-index: 2;
+	}
+	
+#tbt {
+	position: absolute;
+	right: 17%;
+	top: 20%;
+	width: 150px;
+	height: 600px;
+	background:rgba(255,255,255,0.2);
+	font-family: Comic Sans MS;
+	color: red;
+	font-size: 24px;
+	animation: scroll-up 15s linear infinite;
+	text-align: center;
+	}
+
+#funnybender {
+	position: absolute;
+	animation: diagonal 20s linear infinite;
+	font-family: Comic Sans MS;
+	font-size: 50px;
+	color: cyan;
+	}
+	
+#dystopia {
+	position: absolute;
+	animation: scroll-down 12s linear infinite, blink1 8s infinite;
+	text-align: right;
+	font-family: Comic Sans MS;
+	color: blue;
+	font-size: 30px;
+	width: 150px;
+	right: 30%;
+	top: 20%
+	z-index: 2;
+	}
+	
+#makesense {
+	position: absolute;
+	overflow: hidden;
+    white-space: nowrap;
+	top: 50%;
+	animation: scroll-left 40s linear infinite;
+	font-family: Comic Sans MS;
+	color: #DA3394;
+	font-size: 35px;
+	z-index: 1;
+	}
+
+#feelsbad2 {
+	position: absolute; 
+	left: 55%;
+	top: 40%;
+	background-color: transparent;
+	font-family: Comic Sans MS;
+	color: black;
+	font-size: 20px;
+	animation: blink1 4s infinite;
+	animation-delay: 2s;
+}
+
+#havebeen {
+	position: absolute;
+	top: 31%;
+	left: 33%;
+	width: 33%;
+	background:rgba(173,198,135,0.4);
+	font-family: Comic Sans MS;
+	color: #0A3F37;
+	font-size: 31px;
+	}
+	
+#inabar {
+	animation: fadeswap 8s infinite;
+	display: inline;
+	animation-delay: -6s;
+	color: #2E7018;
+}
+
+#inacar {
+	animation: fadeswap 8s infinite;
+	animation-delay: -4s;
+	display: inline;
+	margin-left: -124px;
+	color: #EB3FB2;
+}
+
+#withmyfriend {
+	animation: fadeswap 8s infinite;
+	animation-delay: -2s;
+	display: inline;
+	margin-left: -124px;
+	color: #092912;
+
+}
+
+#withnoend {
+	animation: fadeswap 8s infinite;
+	animation-delay: -8s;
+	display: inline;
+	margin-left: -218px;
+	color: #BA51CC;
+}
+
+#understanding {
+	animation: scroll-left 24s infinite, oneen2 4s infinite;
+	position: absolute;
+	top: 37%;
+	font-family: Comic Sans MS;
+	color: #8373BF
+	font-size: 38px;
+	z-index: 2;
+	}
+	
+#providence {
+	animation: rotate 12s linear infinite;
+	position: absolute;
+	z-index: -1;
+	bottom: 225px;
+	right: 225px;
+	
+}
+
+#chewing {
+	position: absolute;
+	bottom: 1px;
+	left: 8%;
+	font-family: Times New Roman;
+	background: white;
+	color: black;
+	border: 8px solid red;
+	padding-left: 18px;
+	padding-right: 30px;
+	font-size: 12px;
+}
+
+#foibles {
+	width: 350px;
+	position: absolute;
+	bottom: 30%;
+	left: 50%;
+	padding: 3px;
+	background: #5B3111;
+	color: #67E8F4;
+	font-family: Times New Roman;
+	font-size: 30px;
+	animation: italic 8s linear infinite;
+	z-index: -1;
+}
+
+#fiance {
+	position: absolute;
+	width: 300px;
+	height: 100%;
+	right: 1%;
+	background:rgba(64,255,0,0.3);
+	font-family: Times New Roman;
+	font-size: 18px;
+	animation: spinround 25s linear infinite;
+	}
+	
+#riptide {
+	position: absolute;
+	left: 30%;
+	width: 175px;
+	font-family:Comic Sans MS;
+	font-size: 20px;
+	animation: rotate 60s linear infinite, oneen3 8s linear infinite;
+	transform-origin: 0% 200%;
+	z-index: 4;
+}
+
+#heil {
+	position: absolute;
+	right: 250px;
+	top: 1px;
+	z-index: -3;
+	height:150%;
+	animation: blink1 20s linear infinite; 
+}
+
+#different {
+	position:absolute;
+	animation: fadeswap2 10s infinite;
+	display: inline;
+	animation-delay: -5s;
+	left: 10px;
+	top: 300px;
+	background:rgb(68,219,83);
+	font-family:Arial;
+	font-size:24px;
+	color:#431470;
+	width:610px;
+	}
+
+#notmuch {
+	position: absolute;
+	left: 10px;
+	top: 300px;
+	animation: fadeswap2 10s infinite;
+	display: inline;
+	background:rgb(68,219,83);
+	font-family:Arial;
+	font-size:24px;
+	color:#431470;
+	width:610px;
+	}
+	
+#valentine {
+	position:absolute;
+	left:400px;
+	font-family:Courier New;
+	font-weight:bold;
+	font-size:18px;
+	color:#08118E;
+	width:150px;
+	animation:flipover 14s linear infinite;
+	background:rgba(252,236,13,0.3);
+	}
+	
+#asshole {
+	position: absolute;
+	top:70px;
+	animation:scroll-left 40s linear infinite, oneen4 3s linear infinite;
+	font-family:Courier New;
+	font-size:20px;
+	color:#00B012;
+	font-weight:bold;
+}
+
+#remote {
+	position: absolute;
+	top:80%;
+	animation:scroll-left 10s linear infinite, oneen4 3s linear infinite;
+	animation-delay:-1s;
+	font-family:Courier New;
+	font-size:20px;
+	color:#00B012;
+	font-weight:bold;
+	background:black;
+}
+
+</style>
+	<title>REMEMBER WHEN YOU SMOKED AT A BABY????</title>
+	<link rel="shortcut icon" href="http://textsfromshannon.com/favicon.ico" />
+</head>
+
+<body>
+	
+	<audio autoplay loop>
+		<source src="curemusic.mp3">
+		Your browser does not support the audio tag.
+	</audio>
+	
+	<h1>Texts From Shannon</h1>
+	<h2>by "connor"</h2>
+		<div id="div01">
+		<p>i'm not going anywhere either<br><br>IN LIFE I MEAN</p>
+	</div>
+	
+	<div id="div02">
+		<p>I have friends, they're just not here</p>
+	</div>
+	
+	<div id="div03">
+		<p>Because I hate Maryland probably</p>
+	</div>
+	
+	<div id="marq01">
+		<p>Try try try try try try try try try try try try try try try try try try try try try boohoo boohoo boohoo boohoo boohoo</p>
+	</div>
+	
+	<div id="blink">
+		<p>That feels bad</p>
+	</div>
+	
+	<div id="story">
+		<p>Apparently I got a bloody nose and bled all over his car &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;He found my pants for me this morning&nbsp;&nbsp;&nbsp;&nbsp;My shoes I left at the bar&nbsp;&nbsp;&nbsp;&nbsp;So I'm currently wearing his shoes&nbsp;&nbsp;&nbsp;&nbsp;And also socks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here at my job where he's my boss</p>
+	</div>
+	
+	<div id="tbt">#tbt that time you realize no one is to blame for your life but you
+	<br><br><br><br><br><br>
+	SCULPTURE OF TEARS
+	</div>
+	
+	<div id="funnybender">
+		<p>Funny. BENDER!</p>
+	</div>
+
+	<div id="dystopia">
+		<p>We already live in dystopia</p>
+	</div>
+	
+	<div id="makesense">
+		<p>My life resists the human impulse to make sense of events.</p>
+	</div>
+	
+	<div id="feelsbad2">
+		<p>That feels bad</p>
+	</div>
+	
+	<div id="havebeen">I have been drinking
+		<div id="inabar">in a bar.</div>
+		<div id="inacar">in a car.</div>
+		<div id="withmyfriend">with my frand.</div>
+		<div id="withnoend">with no end.</div>
+	</div>
+	
+	<div id="understanding">
+	Somehow even with my deep understanding of how meaningless life is, I'm better emotionally equipped to deal with the crippling effects of late stage capitalism than many of my friends
+	</div>
+	
+	<div id="chewing">
+		<p>Cigarettes that help you quit chewing gum</p>
+	</div>
+	
+	<div id="foibles">
+		At least I have the comfort of knowing I see all my foibles utterly objectively
+	</div>
+	
+	<div id="fiance">
+		<p>Yeah like boohoo I have a beautiful fiance who is nice to me but boohoo I just want to cheat on her with my cousin some more boohoo</p>
+	</div>
+	
+	<div id="riptide">
+		<p>Almost every day right before my shift ends I walk across the parking lot to a very ghetto liquor store and buy a fifth of vodka and a Gatorade and get drunk on the way home</p>
+	</div>
+	
+	<div id="different">
+		<p>Different than drinking a liter and a half of wine by myself</p>
+	</div>
+	
+	<div id="notmuch">
+		<p>but not much different</p>
+	</div>
+	
+	<div id="valentine">
+		<p>In high school though, they sold these weird things at valentine's day where they matched you based on some test and you'd get a list of people in school you were compatible with and I always matched highest with my second cousin</p>
+	</div>
+	
+	<div id="asshole">
+		<p>BUT IT'S ALSO FUNNY TO ME THAT YOU WERE SO MUCH MORE OF AN ASSHOLE TO EVERYONE THAN I WAS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BUT EVERYONE FORGIVES YOU</p>
+	</div>
+	
+	<div id="remote">
+		Couldn't find the remote. Thought "should I just kill myself?"
+	</div>
+	
+	<img src="http://i.imgur.com/SCbw9jd.png" title="NEEN DOT PEEBS SINCE 9/11" alt="NEEN DOT PEEBS SINCE 9/11" height="50%">
+	
+	<img src="http://i.imgur.com/PG6oePP.jpg" style="position:fixed; right:225px; bottom:0px; border:none;"height="225px" title="CAN'T PUT THE GLASSES BACK ON" alt="CAN'T PUT THE GLASSES BACK ON">
+	<img src="http://i.imgur.com/ClpPmPn.jpg" style="position:fixed; right:0px; bottom:225px; border:none;" width="225px" title="OH DEAR GOD" alt="OH DEAR GOD">
+	<img src="http://i.imgur.com/hjrVRWY.jpg" style="position:fixed; right:0px; bottom:0px; border:none;" alt="People are extremely awful"    title="People are extremely awful">
+	
+	<div id="providence">
+		<img src="http://i.imgur.com/JgQOhaT.jpg" style="position:fixed; height:300px;">
+	</div> 
+	
+	<div id="heil">
+		<img src="http://i.imgur.com/h82PE6f.jpg" style="height:800px;">
+	</div>
+	
+
+</body>
+</html>
+
+
+
